@@ -1,0 +1,5 @@
+if tx.value <= 25 * 10^18:
+    stop
+elif contract.storage[tx.data[0]] or tx.data[0] < 1000:
+    stop
+contract.storage[tx.data[0]] = tx.data[1]
