@@ -22,12 +22,12 @@ class CllCompilerFrontend:
 
         cl.run()
 
-    Example code is in testfrontend.py.
-    Call it python testfrontend.py -i tests2.txt
+    Example code is in run.py.
+    Call it python run.py -i tests2.txt
 
     Save the out using std redirection as option -o
     is still left out. So,
-    python testfrontend.py -i tests2.txt > opcodes.cll
+    python run.py -i input.cll > output.es
     or something like that.
 
     Resulting steps are mostly outlined in run() method doctring

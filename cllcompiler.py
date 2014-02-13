@@ -201,3 +201,11 @@ def compile(source):
     p = parse_lines(lines)
     #print p
     return assemble(compile_stmt(p))
+
+if __name__ == '__main__':
+    if len(sys.argv) >= 2:
+        if os.path.exists(sys.argv[1]):
+            open(sys.argv[1]).read()
+            print ' '.join([str(k) for k in compile(open(sys.argv[1]).read())])
+        else:
+            print ' '.join([str(k) for k in compile(sys.argv[1])])
